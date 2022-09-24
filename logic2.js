@@ -8,6 +8,8 @@ const noButton = document.getElementById("no-id");
 
 let revealImg = document.getElementById("reveal-img");
 
+let restartId = document.getElementById("restart-id");
+
 const ringImg = "https://iili.io/sBlsrg.md.png";
 
 const coinImg = "https://iili.io/sBY8ep.png";
@@ -38,13 +40,49 @@ let toldTruth = "";
 
 let thoughtOfObject = "";
 
+function restart() {
+  window.location.replace("part7.html");
+}
+
+function goToPart9() {
+  window.location.href("part9.html");
+}
+
+function goToPart8() {
+  window.location.href("part8.html");
+}
+
+function goToPart7() {
+  window.location.href("part7.html");
+}
+
+function goToPart6() {
+  window.location.href("part6.html");
+}
+
+function goToPart5() {
+  window.location.href("part5.html");
+}
+
+function goToPart4() {
+  window.location.href("part4.html");
+}
+
+function goToPart3() {
+  window.location.href("part3.html");
+}
+
+function goToPart2() {
+  window.location.href("part2.html");
+}
+
 function hideYesNoButtonsAndContinue() {
   yesButton.style.display = "none";
   noButton.style.display = "none";
   nextBtn.style.display = "inline-block";
   //secretNum += yesPoints[questionCounter];
   instructions.innerText =
-    "You're not giving up your thoughts easily. Your body language is subtle. I can't tell yet if you're being truthful. So let's try it again. I will ask you another question. If you answered truthfully the first time, then please answer this next question truthfully as well. If you lied the first time, then please lie again. Ready?";
+    "You're not giving up your thoughts easily. Your body language is subtle. I can't tell yet if you're being truthful. So let's try it again. I'll now ask you a couple more questions. If you lied the first time, continue to lie for the rest of the questions. If you told the truth the first time, tell the truth for the rest of the questions. Ready?";
 }
 
 function getKeyByValue(object, value) {
@@ -83,6 +121,7 @@ function theReveal() {
     revealImg.src = watchImg;
   }
   revealImg.style.display = "block";
+  restartId.style.display = "block";
 }
 
 function yesBtn() {

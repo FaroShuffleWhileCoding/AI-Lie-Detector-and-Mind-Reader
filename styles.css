@@ -70,10 +70,16 @@ p {
 
   .button.next {
     display: none;
+    font-weight: bold;
   }
 
   #reveal-img {
     display: none;
+  }
+
+  #restart-id {
+    display: none;
+    font-weight: bold;
   }
 
   .the-next {
@@ -88,8 +94,6 @@ p {
   }
 
 .yes-no {
-    font-size: 5vh;
-    font-weight: bold;
     padding: 30px;
     margin: 10px;
     text-align: center;
@@ -97,5 +101,7 @@ p {
 }
 
 #yes-id, #no-id {
-margin: 20px;
-}
+  font-size: 3vh;
+  margin: 20px;
+  font-weight: bold;
+  }
