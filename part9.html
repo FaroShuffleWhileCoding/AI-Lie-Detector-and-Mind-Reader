@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>AI Lie Detector and Psychological Mind Reader</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="instructions">
+        Is the object you have in mind either the coin or the key? (Remember,
+        you can lie or tell the truth)
+      </p>
+
+      <div class="yes-no">
+        <button onclick="yesBtn()" id="yes-id" class="button yes">YES</button>
+
+        <button onclick="noBtn()" id="no-id" class="button no">NO</button>
+
+        <button onclick="next()" id="next-id" class="button next">
+          CONTINUE
+        </button>
+
+        <img id="reveal-img" src="" width="185" height="185" />
+      </div>
+    </div>
+    <script type="text/javascript" src="logic2.js"></script>
+  </body>
+</html>
